@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: quick-partner-catalog-utx4
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/asaran-tenant/partner-catalog-2/quick-partner-catalog-utx4@sha256:296bf595ea7ce8621785c66ca5e1f3543928c27ad4ad3b0cd31e6dd3f5093dd8
+        name: my-java-springboot
+        resources: {}
+status: {}
