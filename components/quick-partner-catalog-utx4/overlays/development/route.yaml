@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: quick-partner-catalog-utx4
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: quick-partner-catalog-utx4
+    app.kubernetes.io/part-of: partner-catalog-2
+  name: quick-partner-catalog-utx0nbn
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: quick-partner-catalog-utx4
+    weight: null
+status: {}
